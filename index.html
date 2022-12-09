@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        body{
+            background-image: url("https://www.rollingstone.com/wp-content/uploads/2021/03/nf-Main-Press-Jonathan-Taylor-Sweet-.jpg?w=1581&h=1054&crop=1");
+        }
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container-utama {
+            margin: 20px auto;
+            width: 35%;
+            height: 175px;
+            border: 1pt;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+        }
+
+        .judul {
+            margin: auto;
+            text-align: center;
+            font-size: 32pt;
+            font-weight: lighter;
+
+        }
+
+        .subjudul{
+            margin: auto;
+            text-align: center;
+            font-size: 12pt;
+            font-weight: lighter;
+        }
+
+        .button-box{
+            display: flex;
+            padding-top: 2%;
+            padding-left: 25%;
+        }
+
+        .daftar>button,
+        .member>button {
+            margin: 10px;
+            padding: 8pt;
+            background-color: black;
+            color: white;
+        }
+
+        button:hover {
+            background-color: whitesmoke;
+            color: black;
+            font-weight: bold;
+        }
+
+        button:active {
+        background-color: #151515;
+        box-shadow: 0 5px rgb(43, 43, 43);
+            }
+
+        .daftar,
+        .member {
+            text-align: center;
+
+        }
+    </style>
+    <title>Beranda</title>
+
+<body>
+    <div class="container-utama">
+        <h1 class="judul">NF Fanpage</h1>
+        <h2 class="subjudul">"There's million of us just like you."</h2>
+        <div class="button-box">
+        <form class="daftar" method="post" action="pendaftaran.php">
+            <button type="text">Register</button>
+        </form>
+        <form class="member" method="post" action="displayMember.php">
+            <button type="submit">List of member</button>
+        </form>
+        </div>
+    </div>
+</body>
+</head>
+
+</html>
